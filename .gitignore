@@ -1,9 +1,11 @@
 .worktrees/
 .cache/
 .pnpm-store/
+.local/
 
 # Node / JavaScript
 node_modules/
+package-lock.json
 dist/
 build/
 .next/
@@ -23,6 +25,7 @@ venv/
 .env
 .env.*
 *.log
+frontend/.clerk/
 .DS_Store
 Thumbs.db
 *.swp
