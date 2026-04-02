@@ -1,0 +1,15 @@
+{
+  "name": "datasiq",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev:backend": "python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000",
+    "dev:frontend": "pnpm --dir frontend dev",
+    "build:frontend": "pnpm --dir frontend build",
+    "typecheck:frontend": "pnpm --dir frontend exec tsc --noEmit",
+    "contracts:generate": "openapi-typescript http://localhost:8000/openapi.json -o packages/contracts/src/generated.ts"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.13.0"
+  }
+}
