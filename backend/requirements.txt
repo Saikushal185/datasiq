@@ -1,0 +1,15 @@
+aiosqlite
+alembic
+asyncpg
+anthropic
+fastapi
+httpx
+langchain-core>=0.3.0
+pydantic-settings
+pytz
+pytest
+pytest-asyncio
+python-jose[cryptography]
+sentry-sdk
+sqlalchemy
+uvicorn
